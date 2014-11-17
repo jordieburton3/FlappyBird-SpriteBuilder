@@ -25,7 +25,7 @@
         [self addObstacle];
         
         // Then reset the timer.
-        timeSinceObstacle;
+        timeSinceObstacle = 0.0f;
     }
 }
 
@@ -34,5 +34,6 @@
     // this will get called every time the player touches the screen
     [character flap];
     timeSinceObstacle = 0.0f;
+    [self addObstacle];
 }
 @end
